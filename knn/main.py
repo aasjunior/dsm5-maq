@@ -6,8 +6,9 @@ categorical_cols = ['class']
 
 model = DataModel("db/iris.data", numeric_cols, categorical_cols)
 
-# print(model.data.head())
-data = model.normalize_data()
+# print(model.data)
+model.normalize_data()
+# print(model.data)
 
-knn = KNNModel(model.data, 7)
+knn = KNNModel(model, 7)
 knn.train_and_evaluate()
