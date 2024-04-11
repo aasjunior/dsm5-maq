@@ -22,7 +22,7 @@ dados = pd.read_csv("iris.data")
 dados.dropna(inplace=True)
 ```
 
-* O DataFrame é dividido em duas partes: `X` e `y`. `X` contém os atributos (as primeiras três colunas do DataFrame), e `y` contém as classes (a coluna 'class'):
+* O DataFrame é dividido em duas partes: `X` e `y`. `X` contém os atributos (as primeiras quatro colunas do DataFrame), e `y` contém as classes (a coluna 'class'):
 
 ```python
 X = np.array(dados.iloc[:, 0:3])
